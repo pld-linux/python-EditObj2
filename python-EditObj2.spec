@@ -1,4 +1,4 @@
-%define	pname	EditObj
+%define		pname	EditObj
 Summary:	Usefull tool for writing editors of all kinds
 Summary(pl):	Narzêdzie s³u¿±ce do tworzenia ró¿nych edytorów
 Name:		python-EditObj
