@@ -42,4 +42,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc README
 %dir %{py_sitedir}/editobj
 %{py_sitedir}/editobj/*.py[co]
-%{py_sitedir}/editobj/icons
+%{py_sitescriptdir}/editobj/icons
