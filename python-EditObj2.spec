@@ -1,6 +1,6 @@
 %define		module	EditObj
 Summary:	Useful tool for writing editors of all kinds
-Summary(pl):	Narz阣zie s硊勘ce do tworzenia r罂nych edytor體
+Summary(pl.UTF-8):   Narz臋dzie s艂u偶膮ce do tworzenia r贸偶nych edytor贸w
 Name:		python-EditObj
 Version:	0.5.6
 Release:	1
@@ -18,11 +18,11 @@ Python object (similarly to what Java call a Bean editor, but for
 Python object). EditObj is a useful tool for writing (text or
 non-text) editors of all kinds, including GUI editor and 3D editor.
 
-%description -l pl
-EditObj tworzy i wy秝ietla okno dialogowe Tkinter do edycji obiekt體
-Pythona (podobnie do edytora Java Bean, tylko dla objekt體 Pythona).
-EditObj jest u縴tecznym narz阣ziem s硊勘cym do tworzenia r罂nych
-edytor體 (tekstowych lub nie), w潮cznie z edytorami GUI i 3D.
+%description -l pl.UTF-8
+EditObj tworzy i wy艣wietla okno dialogowe Tkinter do edycji obiekt贸w
+Pythona (podobnie do edytora Java Bean, tylko dla objekt贸w Pythona).
+EditObj jest u偶ytecznym narz臋dziem s艂u偶膮cym do tworzenia r贸偶nych
+edytor贸w (tekstowych lub nie), w艂膮cznie z edytorami GUI i 3D.
 
 %prep
 %setup -q -n %{module}-%{version}
