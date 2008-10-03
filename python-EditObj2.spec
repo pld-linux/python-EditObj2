@@ -3,7 +3,7 @@ Summary:	Useful tool for writing editors of all kinds
 Summary(pl.UTF-8):	Narzędzie służące do tworzenia różnych edytorów
 Name:		python-EditObj
 Version:	0.5.6
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications
 Source0:	http://download.gna.org/songwrite/%{module}-%{version}.tar.gz
