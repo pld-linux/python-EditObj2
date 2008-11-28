@@ -8,7 +8,7 @@ License:	GPL
 Group:		Applications
 Source0:	http://download.gna.org/songwrite/%{module}-%{version}.tar.gz
 # Source0-md5:	a8e999353957cd9fa9f5a6d6fcd0e889
-URL:		http://oomadness.tuxfamily.org/en/editobj/
+URL:		http://home.gna.org/oomadness/en/editobj/
 Requires:	python-tkinter
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
