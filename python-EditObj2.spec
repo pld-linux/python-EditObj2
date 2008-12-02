@@ -2,13 +2,15 @@
 Summary:	Useful tool for writing editors of all kinds
 Summary(pl.UTF-8):	Narzędzie służące do tworzenia różnych edytorów
 Name:		python-%{module}
-Version:	0.1
+Version:	0.2
 Release:	1
 License:	GPL v2+
 Group:		Applications
 Source0:	http://download.gna.org/songwrite/%{module}-%{version}.tar.gz
-# Source0-md5:	2ecf7ddc6ebf4e14c40f932513defeee
+# Source0-md5:	109b2bd03f1f83515928cf1bfa2de5cd
 URL:		http://home.gna.org/oomadness/en/editobj/
+BuildRequires:	python-devel >= 1:2.5
+BuildRequires:	rpm-pythonprov
 Requires:	python-tkinter
 Obsoletes:	python-EditObj
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -36,6 +38,8 @@ rm -rf $RPM_BUILD_ROOT
 	--root=$RPM_BUILD_ROOT \
 	--install-purelib=%{py_sitedir}
 
+%py_postclean
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -44,4 +48,5 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{py_sitedir}/editobj2
 %dir %{py_sitescriptdir}/editobj2
 %{py_sitedir}/editobj2/*.py[co]
+%{py_sitedir}/*.egg-info
 %{py_sitescriptdir}/editobj2/icons
