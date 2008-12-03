@@ -11,6 +11,7 @@ Source0:	http://download.gna.org/songwrite/%{module}-%{version}.tar.gz
 URL:		http://home.gna.org/oomadness/en/editobj/
 BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	rpm-pythonprov
+BuildRequires:	rpmbuild(macros) >= 1.219
 Requires:	python-tkinter
 Obsoletes:	python-EditObj
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
