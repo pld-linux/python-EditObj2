@@ -3,7 +3,7 @@ Summary:	Useful tool for writing editors of all kinds
 Summary(pl.UTF-8):	Narzędzie służące do tworzenia różnych edytorów
 Name:		python-%{module}
 Version:	0.2.1
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		Applications
 Source0:	http://download.gna.org/songwrite/%{module}-%{version}.tar.gz
@@ -37,8 +37,7 @@ różnych edytorów (tekstowych lub nie), włącznie z edytorami GUI i
 rm -rf $RPM_BUILD_ROOT
 
 %{__python} setup.py install \
-	--root=$RPM_BUILD_ROOT \
-	--install-purelib=%{py_sitedir}
+	--root=$RPM_BUILD_ROOT
 
 %py_postclean
 
@@ -47,8 +46,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%dir %{py_sitedir}/editobj2
 %dir %{py_sitescriptdir}/editobj2
-%{py_sitedir}/editobj2/*.py[co]
-%{py_sitedir}/*.egg-info
+%{py_sitescriptdir}/editobj2/*.py[co]
+%{py_sitescriptdir}/*.egg-info
 %{py_sitescriptdir}/editobj2/icons
