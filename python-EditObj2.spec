@@ -3,7 +3,7 @@ Summary:	Useful tool for writing editors of all kinds
 Summary(pl.UTF-8):	Narzędzie służące do tworzenia różnych edytorów
 Name:		python-%{module}
 Version:	0.2.1
-Release:	2
+Release:	3
 License:	GPL v2+
 Group:		Applications
 Source0:	http://download.gna.org/songwrite/%{module}-%{version}.tar.gz
