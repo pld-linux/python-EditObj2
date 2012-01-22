@@ -2,12 +2,12 @@
 Summary:	Useful tool for writing editors of all kinds
 Summary(pl.UTF-8):	Narzędzie służące do tworzenia różnych edytorów
 Name:		python-%{module}
-Version:	0.3
+Version:	0.4
 Release:	1
 License:	GPL v2+
 Group:		Applications
 Source0:	http://download.gna.org/songwrite/%{module}-%{version}.tar.gz
-# Source0-md5:	8df0397b86e63b1ece1da4ffb5143053
+# Source0-md5:	6f9d1422726da58743252c0779a4858b
 URL:		http://home.gna.org/oomadness/en/editobj/
 BuildRequires:	python-devel
 BuildRequires:	rpm-pythonprov
