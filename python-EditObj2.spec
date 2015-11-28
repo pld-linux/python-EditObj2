@@ -35,8 +35,7 @@ edytorów (tekstowych lub nie), włącznie z edytorami GUI i 3D.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__python} setup.py install \
-	--root=$RPM_BUILD_ROOT
+%py_install
 
 %py_postclean
 
