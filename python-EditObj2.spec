@@ -2,13 +2,14 @@
 Summary:	Useful tool for writing editors of all kinds
 Summary(pl.UTF-8):	Narzędzie służące do tworzenia różnych edytorów
 Name:		python-%{module}
-Version:	0.4
-Release:	2
+Version:	0.5.1
+Release:	1
 License:	GPL v2+
 Group:		Applications
-Source0:	http://download.gna.org/songwrite/%{module}-%{version}.tar.gz
-# Source0-md5:	6f9d1422726da58743252c0779a4858b
-URL:		http://home.gna.org/oomadness/en/editobj/
+Source0:	https://pypi.python.org/packages/source/E/%{module}/%{module}-%{version}.tar.gz
+# Source0-md5:	fd7c0c16bb70cdf5eaa30f0e47b16e4f
+Patch0:		install.patch
+URL:		http://www.lesfleursdunormal.fr/static/informatique/editobj/index_en.html
 BuildRequires:	python-devel
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.710
@@ -31,6 +32,7 @@ edytorów (tekstowych lub nie), włącznie z edytorami GUI i 3D.
 
 %prep
 %setup -q -n %{module}-%{version}
+%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT

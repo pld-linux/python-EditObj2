@@ -1,0 +1,11 @@
+--- EditObj2-0.5.1/setup.py~	2016-01-19 10:23:37.000000000 +0100
++++ EditObj2-0.5.1/setup.py	2016-07-10 20:47:17.062045391 +0200
+@@ -19,7 +19,7 @@
+ import os, os.path, sys, glob
+ import distutils.core, distutils.sysconfig
+ 
+-install_dir = distutils.sysconfig.get_python_lib()
++install_dir = distutils.sysconfig.get_python_lib(prefix='/usr')
+ 
+ distutils.core.setup(name         = "EditObj2",
+                      version      = "0.5.1",
